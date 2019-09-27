@@ -1,0 +1,705 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 20% 5% 20% 5%;
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("header.jpg");
+    /* Set a specific height */
+  min-height: 60vh;
+
+    /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+body{
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+body > div {
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+body > div:last-of-type {
+  margin-bottom: 100px;
+}
+h1 {
+  margin-top: 10%;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 900;
+  font-size: 3em;
+  color: #0DCEFF;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 800;
+  color: #0DCEFF;
+  font-size: 2.4em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #5b5b5b;
+}
+h3 a {
+  color: #14C486;
+  font-size: 1.2em;
+  border-bottom: 2px dotted #14C486;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+p a {
+  color: #14C486;
+  border-bottom: 2px dotted #14C486;
+}
+
+.bg-dark {
+  border-bottom: 1px solid white;
+}
+
+.bg-dark h4 {
+  color: #D0D1D1;
+}
+
+p i {
+  color: red;
+}
+
+section {
+  padding: 150px 0;
+}
+
+img {
+  width: 100%;
+}
+
+  /* Hex Chart */
+  #categories h3 {
+    color: #0e677f;
+    text-align: center;
+    padding: 13px;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+  }
+  #categories p {
+    color: #07a658;
+    text-align: center;
+    padding-bottom: 13px;
+    font-size: .8em;
+  }
+  #categories{
+    overflow:hidden;
+    width:90%;
+    margin:0 auto;
+  }
+  .clr:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  #categories li{
+    position:relative;
+    list-style-type:none;
+    width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+    padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+    float:left;
+    overflow:hidden;
+    visibility:hidden;
+
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg);
+    transform: rotate(-60deg) skewY(30deg);
+  }
+  #categories li:nth-child(3n+2){
+    margin:0 1%;
+  }
+  #categories li:nth-child(6n+4){
+    margin-left:0.5%;
+  }
+  #categories li:nth-child(6n+4), #categories li:nth-child(6n+5), #categories li:nth-child(6n+6) {
+  	margin-top: -6.9285714285%;
+    margin-bottom: -6.9285714285%;
+
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  }
+  #categories li:nth-child(6n+4):last-child, #categories li:nth-child(6n+5):last-child, #categories li:nth-child(6n+6):last-child{
+    margin-bottom:0%;
+  }
+  #categories li *{
+    position:absolute;
+    visibility:visible;
+  }
+  #categories li > div{
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:#fff;
+    overflow:hidden;
+
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+
+  	-webkit-backface-visibility:hidden;
+
+  }
+
+  /* HEX CONTENT */
+  #categories li img{
+    left:-100%; right:-100%;
+    width: auto; height:100%;
+    margin:0 auto;
+
+    /* Removing grayscale as a style option.
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(96%);
+    */
+  }
+
+
+
+  #categories div h1, #categories div p{
+    width:100%;
+    padding:0 5%;
+    background-color:#008080; background-color: rgba(25, 113, 12, 0.8);
+    font-family: 'Poppins', sans-serif;
+
+    -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+    -ms-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+    transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+  }
+  #categories li h1{
+    bottom:110%;
+    font-style:italic;
+    font-weight:normal;
+    font-size:1.3em;
+    padding-top:100%;
+    padding-bottom:100%;
+  }
+  @media screen and (max-width: 400px){
+    #categories li h1{
+      bottom:90%;
+      font-size:.5em;
+      padding-top:100%;
+      padding-bottom:100%;
+    }
+    #categories li p {
+      font-size:.1em;
+    }
+  }
+
+
+  #categories li h1:after{
+  	content:'';
+    display:block;
+    position:absolute;
+    bottom:-1px; left:45%;
+    width:10%;
+    text-align:center;
+    z-index:1;
+  }
+  #categories li p{
+  	padding-top:50%;
+  	top:110%;
+  	padding-bottom:50%;
+    color: #fcfcfc;
+  }
+  .bg-dark img{
+    max-width: 40%;
+    display: block;
+    float: left;
+    margin-right: 1.1em;
+    margin-bottom: 1.1em;
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+
+  /*styling for national*/
+  #categories .national {
+    background-color:#ffe00e; background-color: rgba(255, 83, 13, 0.8);
+  }
+
+  .resource {
+    padding-top: .4em;
+    padding-bottom: 1.2em;
+  }
+  .resource img {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+  }
+
+  .resource h3 {
+    padding-top: .8em;
+  }
+
+  .resource p {
+    padding-top: .8em;
+  }
+
+  /* HEX HOVER EFFECT  */
+  #categories li div:hover h1 {
+    bottom:46%;
+    padding-bottom:10%;
+  }
+
+  #categories li div:hover p{
+    top:46%;
+    padding-top:10%;
+  }
+
+
+  /* Turnout line animation  */
+  /* Container for animations  */
+
+  @media screen and (max-width: 400px){
+    .all-image-container {
+      position: relative;
+      margin-bottom: 5em;
+    }
+  }
+  /* INEC OFFICIALS ANIMATION */
+  .inec-container {
+    position: relative;
+    margin-bottom: 15em;
+    height: 400px;
+  }
+
+  /* Each specific turnout div declared as absolute position  */
+  #inec-woman, #inec-man, #inec-table {
+    position: absolute;
+    top: 0px;
+    width: auto;
+    display: block;
+    margin-bottom: 20em;
+  }
+
+  #inec-woman {
+    z-index: 100;
+  }
+
+  #inec-man {
+    z-index: 10000;
+  }
+
+  #inec-table {
+    z-index: 1000;
+  }
+
+  /* PARTY AGENTS ANIMATION */
+  .agents-container {
+    position: relative;
+    margin-bottom: 22em;
+    height: 400px;
+  }
+
+  /* Each specific turnout div declared as absolute position  */
+  #agents-woman, #agents-man, #agents-table {
+    position: absolute;
+    top: 0px;
+    width: auto;
+    margin-bottom: 20em;
+  }
+
+  #agents-woman {
+    z-index: 100;
+  }
+
+  #agents-man {
+    z-index: 10000;
+  }
+
+  #agents-table {
+    z-index: 1000;
+  }
+
+  /* TURNOUT ANIMATION */
+  .turnout-container {
+    position: relative;
+    margin-bottom: 22em;
+    height: 400px;
+  }
+
+  /* Each specific turnout div declared as absolute position  */
+  #turnout-4, #turnout-3, #turnout-2, #turnout-1 {
+    position: absolute;
+    top: 0px;
+    width: auto;
+    margin-bottom: 2em;
+  }
+
+  #turnout-1 {
+    z-index: 10000;
+  }
+
+  #turnout-2 {
+    z-index: 100000;
+  }
+
+  #turnout-3 {
+    z-index: 10000000;
+  }
+
+  #turnout-4 {
+    z-index: 1000000000;
+  }
+
+  /* SVG Map With Rollover */
+    .svgmap {
+      width: 100%;
+      margin:10px auto;
+      }
+
+    .cls-1 {
+      fill: #76c5cc;
+    }
+
+    .cls-1, .cls-2, .cls-3 {
+      stroke: #565656;
+      stroke-linecap: square;
+      stroke-linejoin: bevel;
+      stroke-width: 1.1px;
+      cursor: pointer;
+    }
+
+    .cls-2 {
+      fill: #3793a0;
+    }
+
+    .cls-3 {
+      fill: #0f687f;
+    }
+
+  /* Tooltip */
+  .tooltip-holder {
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+  }
+
+  /*dataclass used to be info-icon*/
+  .dataclass {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 10px 0;
+    line-height: 50px;
+    font-size: 1.5em;
+    font-style: normal;
+    text-align: center;
+    border-radius: 50%;
+    background: #2785C0;
+    color: #fff;
+  }
+  .dataclass.cls-2 {
+    position: relative;
+  }
+  .dataclass.cls-2:before, .cls-2:after {
+    opacity: 0;
+    z-index: 98;
+    -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -webkit-transition: opacity 300ms, visibility 0ms linear;
+    -webkit-transition-delay: 0s, 300ms;
+    transition: opacity 300ms, visibility 0ms linear 300ms;
+    pointer-events: none;
+  }
+  @media (max-width: 480px) {
+    .dataclass.cls-2:before, .cls-2:after {
+      display: none;
+    }
+  }
+  .dataclass.cls-2:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200px;
+    padding: 10px 15px;
+    line-height: 18px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    white-space: normal;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  .dataclass.cls-2:after {
+    content: '';
+  }
+  .dataclass.cls-2:before {
+    top: -9px;
+    bottom: auto;
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .dataclass.cls-2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 6px solid #2c3e50;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+    top: -9px;
+    bottom: auto;
+  }
+  .dataclass.cls-2:before, .cls-2:after {
+    left: 50%;
+    right: auto;
+    margin-left: -6px;
+  }
+  .dataclass.cls-2:before {
+    margin-left: -18px;
+  }
+  .dataclass.cls-2:hover {
+    /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- https://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */
+  }
+  .dataclass.cls-2:hover:before, .cls-2:hover:after {
+    opacity: 1;
+    pointer-events: all;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+  }
+  .cls-1 {
+    position: relative;
+  }
+  .cls-1:before, .cls-1:after {
+    opacity: 0;
+    z-index: 98;
+    -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -webkit-transition: opacity 300ms, visibility 0ms linear;
+    -webkit-transition-delay: 0s, 300ms;
+    transition: opacity 300ms, visibility 0ms linear 300ms;
+    pointer-events: none;
+  }
+  @media (max-width: 480px) {
+    .cls-1:before, .cls-1:after {
+      display: none;
+    }
+  }
+  .cls-1:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200px;
+    padding: 10px 15px;
+    line-height: 18px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    white-space: normal;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  .cls-1:after {
+    content: '';
+  }
+  .cls-1:before {
+    top: -9px;
+    bottom: auto;
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .cls-1:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 6px solid #2c3e50;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+    top: -9px;
+    bottom: auto;
+  }
+  .cls-1:before, .cls-1:after {
+    right: 50%;
+    left: auto;
+    margin-right: -6px;
+  }
+  .cls-1:before {
+    margin-right: -18px;
+  }
+  .cls-1:hover {
+    /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- https://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */
+  }
+  .cls-1:hover:before, .cls-1:hover:after {
+    opacity: 1;
+    pointer-events: all;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+  }
+  .cls-3 {
+    position: relative;
+  }
+  .cls-3:before, .cls-3:after {
+    opacity: 0;
+    z-index: 98;
+    -moz-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -o-transition: opacity 300ms, visibility 0ms linear 300ms;
+    -webkit-transition: opacity 300ms, visibility 0ms linear;
+    -webkit-transition-delay: 0s, 300ms;
+    transition: opacity 300ms, visibility 0ms linear 300ms;
+    pointer-events: none;
+  }
+  @media (max-width: 480px) {
+    .cls-3:before, .cls-3:after {
+      display: none;
+    }
+  }
+  .cls-3:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 200px;
+    padding: 10px 15px;
+    line-height: 18px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    white-space: normal;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  .cls-3:after {
+    content: '';
+  }
+  .cls-3:before {
+    bottom: -9px;
+    top: auto;
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .cls-3:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 6px solid #2c3e50;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: none;
+    bottom: -9px;
+    top: auto;
+  }
+  .cls-3:before, .cls-3:after {
+    right: 50%;
+    left: auto;
+    margin-right: -6px;
+  }
+  .cls-3:before {
+    margin-right: -18px;
+  }
+  .cls-3:hover {
+    /* putting comment here so :hover is declared first by itself to fix ie10 bug with transitions on psuedo elements- https://css-tricks.com/pseudo-element-animationstransitions-bug-fixed-in-webkit/ */
+  }
+  .cls-3:hover:before, .cls-3:hover:after {
+    opacity: 1;
+    pointer-events: all;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+  }
+
+
+/* Image Toggle */
+  .est2011 {
+  height: 0;
+  overflow: hidden;
+  padding-top: calc( 9/16 * 100% );
+  position: relative;
+  width: 100%;
+  background-image: url(../img/2011_results_estimate.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+
+.compare,
+.featured-image {
+  bottom: 0;
+  display: block;
+  left: 65px;
+  position: absolute;
+  right: 11px;
+  top: 0;
+}
+
+.featured-image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+  width: 74%;
+
+
+}
+
+.featured-image.none {
+  display: none;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: 1px solid teal;
+  background: white;
+  color: teal;
+  margin: 2em auto;
+  display: block;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+button:active {
+  background: teal;
+  color: white;
+}
